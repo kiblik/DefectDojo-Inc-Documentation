@@ -31,7 +31,7 @@ jobs:
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
           ref: 'dev'
 
-      - run: cp -avr ./proprietary_plugins ./django-DefectDojo/docs/content/en/
+      - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
       - run: cp ./config.dev.toml ./django-DefectDojo/docs/
       - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.dev.toml
       - run: ls -l ./django-DefectDojo/docs/public/*
@@ -47,7 +47,7 @@ jobs:
           ref: 'master'
 
       - run: rm -rf ./django-DefectDojo/docs/content/en/proprietary_plugins 
-      - run: cp -avr ./proprietary_plugins ./django-DefectDojo/docs/content/en/
+      - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
       - run: cp ./config.master.toml ./django-DefectDojo/docs/
       - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.master.toml
       - run: mv /tmp/dev django-DefectDojo/docs/public/
