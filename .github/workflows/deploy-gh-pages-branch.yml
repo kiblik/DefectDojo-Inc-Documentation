@@ -33,6 +33,7 @@ jobs:
           ref: 'dev'
 
       - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
+      - run: cp ./proprietary_plugins/images/*.png ./django-DefectDojo/docs/content/en/images/ | true
       - run: cp ./config.dev.toml ./django-DefectDojo/docs/
       - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.dev.toml
       - run: ls -l ./django-DefectDojo/docs/public/*
