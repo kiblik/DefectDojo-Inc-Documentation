@@ -32,7 +32,7 @@ jobs:
           ref: 'dev'
 
       - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
-      - run: cp ./proprietary_images/* ./django-DefectDojo/docs/docs/static/images/ | true
+      - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
       - run: cp ./config.dev.toml ./django-DefectDojo/docs/
       - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.dev.toml
       - run: ls -l ./django-DefectDojo/docs/public/*
@@ -49,7 +49,7 @@ jobs:
 
       - run: rm -rf ./django-DefectDojo/docs/content/en/proprietary_plugins 
       - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
-      - run: cp ./proprietary_images/* ./django-DefectDojo/docs/docs/static/images/ | true
+      - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
       - run: cp ./config.master.toml ./django-DefectDojo/docs/
       - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.master.toml
       - run: mv /tmp/dev django-DefectDojo/docs/public/
