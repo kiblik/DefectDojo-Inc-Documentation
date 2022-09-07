@@ -11,18 +11,18 @@ The version manager within Defect Dojo provides support for managing the base De
 
 To view the current Defect Dojo version information of a given instance, navigate to the _Version Manager Settings_ page within the sidebar.
 
-![Accessing Version Manager](proprietary_plugins/images/nav-vm.png)
+![Accessing Version Manager](images//nav-vm.png)
 
 ## Version Manager Settings
 
 Within the _Version Manager Settings_ page, you will find all the necessary information regarding the Defect Dojo version, as well as options to elect for automatic updates, and set a reminder date to check for updates.
 
-![Version Manager Settings](proprietary_plugins/images/vm-settings.png)
+![Version Manager Settings](images//vm-settings.png)
 
 ## Version Manager Notifications
 
 When the reminder date set in the _Version Manager Settings_ page is reached, a popup will be displayed that allows the user to either postpone the upgrade reminder, or perform the upgrade. 
 
-![Version Manager Notification](proprietary_plugins/images/vm-popup.png)
+![Version Manager Notification](images//vm-popup.png)
 
 If the user wishes to begin the upgrade when the reminder is shown, the _Update Now_ button can be selected, which will then begin the upgrade process.

@@ -19,8 +19,8 @@ Consultant mode can be enabled and disabled within the account settings dropdown
 
 When a cross mark is displayed next to the _Consultant Mode_ text, consultant mode is disabled.
 
-![Enabling Dark Mode](proprietary_plugins/images/cm-dm-disabled.png)
+![Enabling Dark Mode](images//cm-dm-disabled.png)
 
 When a check mark is displayed next to the _Consultant Mode_ text, consultant mode is enabled.
 
-![Enabling Consultant Mode](proprietary_plugins/images/cm-enabled.png)
+![Enabling Consultant Mode](images//cm-enabled.png)

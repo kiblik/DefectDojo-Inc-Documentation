@@ -15,15 +15,15 @@ If no existing engagement is found under a given product such that an appropriat
 
 Begin by navigating to the _Smart Upload_ page under the plugins tab within the sidebar.
 
-![Accessing Smart Upload](proprietary_plugins/images/nav-su.png)
+![Accessing Smart Upload](images//nav-su.png)
 
 To begin uploading, select _Smart Upload_ in the top right.
 
-![Start Smart Upload](proprietary_plugins/images/su-upload.png)
+![Start Smart Upload](images//su-upload.png)
 
 This will prompt the user to fill out information pertaining to the scan file(s) being uploaded, similar to the way importing is completed in other parts of Defect Dojo. Once all data in the form is completed, submit the form.
 
-![Import Findings](proprietary_plugins/images/su-import.png)
+![Import Findings](images//su-import.png)
 
 Once the upload is complete, all findings that were not assigned to an existing product will be displayed for manual placement. After selecting a finding, three options will be displayed:
 
@@ -31,8 +31,8 @@ Once the upload is complete, all findings that were not assigned to an existing 
 - _Assign Product_ - list all existing products that the finding may be assigned to
 - _Disregard Findings_ - delete the unassigned finding altogether
 
-![Product Placement](proprietary_plugins/images/su-placement.png)
+![Product Placement](images//su-placement.png)
 
-![Manually Assign Finding](proprietary_plugins/images/su-assign.png)
+![Manually Assign Finding](images//su-assign.png)
 
 ## API
