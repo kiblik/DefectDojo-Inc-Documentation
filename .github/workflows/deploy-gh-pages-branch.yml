@@ -49,7 +49,7 @@ jobs:
 
       - run: rm -rf ./django-DefectDojo/docs/content/en/proprietary_plugins 
       - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
-      - run: cp ./django-DefectDojo/docs/content/en/proprietary_plugins/*.png ./django-DefectDojo/docs/content/en/images/ | true
+      - run: cp ./django-DefectDojo/docs/content/en/proprietary_plugins/images/*.png ./django-DefectDojo/docs/content/en/images/ | true
       - run: cp ./config.master.toml ./django-DefectDojo/docs/
       - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.master.toml
       - run: mv /tmp/dev django-DefectDojo/docs/public/
