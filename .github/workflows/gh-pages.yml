@@ -33,7 +33,7 @@ jobs:
 
       - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
       - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
-      - run: chmod +x ./hotfix.sh
+      - run: pwd
       - run: bash ./hotfix.sh
       - run: cp ./config.dev.toml ./django-DefectDojo/docs/
       - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.dev.toml
@@ -52,7 +52,7 @@ jobs:
       - run: rm -rf ./django-DefectDojo/docs/content/en/proprietary_plugins 
       - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
       - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
-      - run: chmod +x ./hotfix.sh
+      - run: pwd
       - run: bash ./hotfix.sh
       - run: cp ./config.master.toml ./django-DefectDojo/docs/
       - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.master.toml
