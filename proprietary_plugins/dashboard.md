@@ -1,19 +1,19 @@
 ---
 title: "Enhanced Dashboard"
-description: "A customizable dashboard for Defect Dojo."
+description: "A customizable dashboard for DefectDojo."
 draft: false
 weight: 2
 ---
 
 ## Enhanced Dashboard
 
-The upgraded Defect Dojo dashboard provides users with an enhanced take on the base Defect Dojo dashboard. With this custom dashboard, users are given full control of what overview information tiles are displayed (e.g. _Passing Products_ or _Active Critical Findings_), what icons and colors best represent these custom tiles, as well as what metrics should be displayed.
+The upgraded DefectDojo dashboard provides users with an enhanced take on the base DefectDojo dashboard. With this custom dashboard, users are given full control of what overview information tiles are displayed (e.g. _Passing Products_ or _Active Critical Findings_), what icons and colors best represent these custom tiles, as well as what metrics should be displayed.
 
 _Enhanced Dashboard_ and is configured globally for all users (e.g. all users will see the same custom dashboard).
 
 ![Enhanced Dashboard](../../images/dd-dashboard.png)
 
-This upgraded dashboard for Defect Dojo also includes dynamic color tiles, which allows given tiles to take a given range of colors based on minimum and maximum threshold values. With this feature enabled, a given tile's color will automatically change based on the data that it represents.
+This upgraded dashboard for DefectDojo also includes dynamic color tiles, which allows specified tiles to take a range of colors based on minimum and maximum threshold values. With this feature enabled, a tile's color will automatically change based on the data that it represents.
 
 To customize the enhanced dashboard, navigate to the _Dashboard Settings_ page under the plugins tab within the sidebar.
 
@@ -40,3 +40,5 @@ Once the tile information has been configured, the _Enhanced Dashboard_ settings
 With this example, the custom dashboard configuration would display as follows.
 
 ![Enhanced Dashboard Example](../../images/dd-single-tile.png)
+
+For additional information, please see our [pricing page](https://www.defectdojo.com/pricing).
