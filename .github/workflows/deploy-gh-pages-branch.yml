@@ -36,7 +36,8 @@ jobs:
       - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
       - run: ./hotfix.bash | true
       - run: cp ./config.dev.toml ./django-DefectDojo/docs/
-      - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.dev.toml
+      - run: cd django-DefectDojo/docs && npm ci
+      - run: cd django-DefectDojo/docs && hugo --minify --config config.dev.toml
       - run: ls -l ./django-DefectDojo/docs/public/*
 
       # for dev we move everything into a subfolder, so the master version stays in the root
@@ -54,7 +55,8 @@ jobs:
       - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
       - run: ./hotfix.bash | true
       - run: cp ./config.master.toml ./django-DefectDojo/docs/
-      - run: cd django-DefectDojo/docs && npm ci && hugo --minify --config config.master.toml
+      - run: cd django-DefectDojo/docs && npm ci &&
+      - run: cd django-DefectDojo/docs && npm o --minify --config config.master.toml
       - run: mv /tmp/dev django-DefectDojo/docs/public/
       - run: ls -l ./django-DefectDojo/docs/public/*
 
