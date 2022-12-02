@@ -37,6 +37,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: DefectDojo/django-DefectDojo
+          submodules: recursive  # Fetch the Docsy theme
           ref: dev
           path: dojo
 
@@ -57,6 +58,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: DefectDojo/django-DefectDojo
+          submodules: recursive  # Fetch the Docsy theme
           ref: master
           path: dojo
 
