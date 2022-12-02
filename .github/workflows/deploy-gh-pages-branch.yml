@@ -2,6 +2,7 @@ name: Build Hugo to gh-pages Branch
 on:
   push:
     branches: [master, dev]
+  workflow_dispatch:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
