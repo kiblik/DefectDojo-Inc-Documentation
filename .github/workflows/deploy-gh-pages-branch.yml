@@ -38,6 +38,8 @@ jobs:
           repository: DefectDojo/django-DefectDojo
           ref: dev
 
+      - run: ls -al
+
       - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
       - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
       - run: ./hotfix.bash | true
