@@ -32,44 +32,42 @@ jobs:
         with:
           ref: master
 
-      - name: Checkout tools repo
+      - name: Checkout DefectDojo Repo (dev)
         uses: actions/checkout@v3
         with:
           repository: DefectDojo/django-DefectDojo
-          path: docs
           ref: dev
 
-      - run: cp -r ./proprietary_plugins ./docs/content/en/ | true
-      - run: cp ./proprietary_images/* ./docs/static/images/ | true
+      - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
+      - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
       - run: ./hotfix.bash | true
-      - run: cp ./config.dev.toml ./docs/
-      - run: cd docs && npm ci
-      - run: cd docs && hugo --minify --config config.dev.toml
-      - run: ls -l ./docs/public/*
+      - run: cp ./config.dev.toml ./django-DefectDojo/docs/
+      - run: cd django-DefectDojo/docs && npm ci
+      - run: cd django-DefectDojo/docs && hugo --minify --config config.dev.toml
+      - run: ls -l ./django-DefectDojo/docs/public/*
 
       # for dev we move everything into a subfolder, so the master version stays in the root
-      - run: mkdir /tmp/dev && mv docs/public/* /tmp/dev/
+      - run: mkdir /tmp/dev && mv django-DefectDojo/docs/public/* /tmp/dev/
 
-      - name: Checkout tools repo
+      - name: Checkout DefectDojo Repo (master)
         uses: actions/checkout@v3
         with:
           repository: DefectDojo/django-DefectDojo
-          path: docs
           ref: master
 
-      - run: rm -rf ./docs/content/en/proprietary_plugins 
-      - run: cp -r ./proprietary_plugins ./docs/content/en/ | true
-      - run: cp ./proprietary_images/* ./docs/static/images/ | true
+      - run: rm -rf ./django-DefectDojo/docs/content/en/proprietary_plugins 
+      - run: cp -r ./proprietary_plugins ./django-DefectDojo/docs/content/en/ | true
+      - run: cp ./proprietary_images/* ./django-DefectDojo/docs/static/images/ | true
       - run: ./hotfix.bash | true
-      - run: cp ./config.master.toml ./docs/
-      - run: cd docs && npm ci
-      - run: cd docs && hugo --minify --config config.master.toml
-      - run: mv /tmp/dev docs/public/
-      - run: ls -l ./docs/public/*
+      - run: cp ./config.master.toml ./django-DefectDojo/docs/
+      - run: cd django-DefectDojo/docs && npm ci
+      - run: cd django-DefectDojo/docs && hugo --minify --config config.master.toml
+      - run: mv /tmp/dev django-DefectDojo/docs/public/
+      - run: ls -l ./django-DefectDojo/docs/public/*
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with: # publishes to the `gh-pages` branch by default
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/public
+          publish_dir: ./django-DefectDojo/docs/public
           cname: documentation.defectdojo.com
