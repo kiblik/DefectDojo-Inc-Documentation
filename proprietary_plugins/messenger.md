@@ -14,20 +14,20 @@ Messenger acts as a secondary method of communication, outside of email, for Saa
 
 New messages are collected automatically by DefectDojo. When new messages are received, they will be displayed as popups. After reviewing the contents of the popup, the message can be closed by selecting _Acknowledge_.
 
-![Message Notification](../../images/mp-popup.png)
+![Message Notification](../../images/messenger/mp-popup.png)
 
 ## Message Portal
 
 All previously received notifications will be stored and accessible within the message portal. To access previously received messages, navigate to the _Message Portal_ page under the plugins tab within the sidebar.
 
-![Accessing Message Portal](../../images/nav-mp.png)
+![Accessing Message Portal](../../images/messenger/nav-mp.png)
 
 Within the message portal, all previously received messages will be listed. As with other objects in DefectDojo, messages can be filtered to find a specific message faster. Although messages are collected automatically, if a user wishes to check for new messages manually, the _Refresh_ button will pull any new messages that may exist.
 
-![Message Portal](../../images/mp-all.png)
+![Message Portal](../../images/messenger/mp-all.png)
 
 To view a specific message in full, select the eyeball under the actions column for a specific message. After being redirected, of the details regarding a specific message will be displayed.
 
-![Message View Action](../../images/mp-view.png)
+![Message View Action](../../images/messenger/mp-view.png)
 
 For additional information, please see our [pricing page](https://www.defectdojo.com/pricing).
