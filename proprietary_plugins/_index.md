@@ -1,6 +1,6 @@
 ---
 title: "Proprietary Plugins"
-description: "Additional features to enhance your experience with Defect Dojo."
+description: "Additional features to enhance your experience with DefectDojo."
 weight: 4
 chapter: true
 ---
