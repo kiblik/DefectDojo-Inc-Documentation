@@ -21,7 +21,12 @@ To begin uploading, select _Smart Upload_ in the top right.
 
 ![Start Smart Upload](../../../images/smart_upload/su-upload.png)
 
-This will prompt the user to fill out information pertaining to the scan file(s) being uploaded, similar to the way importing is completed in other parts of DefectDojo. Once all data in the form is completed, submit the form.
+This will prompt the user to fill out information pertaining to the scan file(s) being uploaded, similar to the way importing is completed in other parts of DefectDojo. 
+
+![Smart Upload Form](../../../images/smart_upload/su-import.png)
+
+
+Once all data in the form is completed, submit the form.
 
 #### API Endpoint
 
@@ -58,8 +63,8 @@ Once the product matching is run, the state of the system will be as follows:
 
 If a finding's endpoints do not match any existing endpoints within the system, then the finding will be split into N findings, where N is the number of unique hosts where this finding was discovered:
 
-<!-- Screenshot of ../../../images/smart_upload/su-split-findings.puml -->
-![PUML Split Findings](../../../images/smart_upload/su-split-findings.png)
+<!-- Screenshot of ../../../images/smart_upload/su-findings-split.puml -->
+![PUML Split Findings](../../../images/smart_upload/su-findings-split.png)
 
 #### What happens if multiple matches are found?
 
@@ -69,7 +74,7 @@ Matching findings from multiple endpoints to products is the primary purpose of 
 
 Engagements and Tests created under a product are intended to be CI/CD focused. In most cases, the engagement will be reused. However, supplying updated arguments to the importer such as version, build ID, commit hash, or branch tag will be used to filter for a specific engagement based on those values. 
 
-![Engagements and Tests](../../../images/smart_upload/su-test-engagements.png)
+![Engagements and Tests](../../../images/smart_upload/su-test-engagement.png)
 
 ### Product Placement
 
