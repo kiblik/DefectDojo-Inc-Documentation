@@ -1,0 +1,3 @@
+{{- $reoJS := resources.Get "js/reo.js" | minify | fingerprint -}}
+  <script src="{{ $reoJS.Permalink }}" integrity="{{ $reoJS.Data.Integrity }}"></script>
+{{ end }}
