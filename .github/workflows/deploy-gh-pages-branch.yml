@@ -45,7 +45,8 @@ jobs:
 
       - run: cp -r ./docs/proprietary_plugins ./dojo/docs/content/en/ | true
       - run: cp -r ./docs/proprietary_images/* ./dojo/docs/static/images/ | true
-      - run: cp -r ./docs/js ./dojo/docs/assets/ | true
+      - run: cp -r ./docs/layout/partials/* ./dojo/docs/layout/partials/ | true
+      - run: cp -r ./docs/js ./dojo/docs/static/ | true
       - run: ./docs/hotfix.bash | true
       - run: cp ./docs/config.dev.toml ./dojo/docs/
       - run: cd dojo/docs && npm ci
@@ -72,7 +73,8 @@ jobs:
       - run: rm -rf ./dojo/docs/content/en/proprietary_plugins 
       - run: cp -r ./docs/proprietary_plugins ./dojo/docs/content/en/ | true
       - run: cp -r ./docs/proprietary_images/* ./dojo/docs/static/images/ | true
-      - run: cp -r ./docs/js ./dojo/docs/assets/ | true
+      - run: cp -r ./docs/layout/partials/* ./dojo/docs/layout/partials/ | true
+      - run: cp -r ./docs/js ./dojo/docs/static/ | true
       - run: ./docs/hotfix.bash | true
       - run: cp ./docs/config.master.toml ./dojo/docs/
       - run: cd dojo/docs && npm ci

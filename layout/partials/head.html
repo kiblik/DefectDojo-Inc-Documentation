@@ -1,0 +1,10 @@
+{{ define "main" }}
+  {{ partial "head.html" . }} <!-- Include the default Docsy head -->
+{{ end }}
+
+{{ define "head" }}
+  {{ block "head" . }}{{ end }} <!-- Open the block if defined by Docsy -->
+
+  {{- $reoJS := resources.Get "js/reo.js" | minify | fingerprint -}}
+  <script src="{{ $reoJS.Permalink }}" integrity="{{ $reoJS.Data.Integrity }}"></script>
+{{ end }}
